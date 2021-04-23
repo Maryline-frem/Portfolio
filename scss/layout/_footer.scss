@@ -8,3 +8,12 @@
 .nav-link:hover {
     background-color: #E0B7B7;
 }
+
+@media screen and (min-width:1020px) {
+    .navbar {
+        position: absolute;
+        bottom: 330px;
+        border-top: 1px solid #888888;
+        border-bottom: 1px solid #888888;
+    }
+}

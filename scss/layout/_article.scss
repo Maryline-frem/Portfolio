@@ -3,11 +3,11 @@
     text-align: center;
     background-color: #ffffff;
     padding: 10px;
-    margin: 30px 0px 0px 0px;
+    margin: 30px 0px 80px 0px;
 }
 
 .art--rubrique {
-    margin-top: 80px;
+    margin-top: 40px;
 }
 
 .art__title {
@@ -77,4 +77,45 @@
 
 .projet--arg {
     font-size: 14px;
+}
+
+@media screen and (min-width:670px) {
+    .art__title {
+        font-size: 90px;
+    }
+
+    .art__sstitle {
+        font-size: 38px;
+    }
+}
+
+@media screen and (min-width:1020px) {
+    .art__title {
+        font-size: 90px;
+        text-align: left;
+    }
+
+    .art__sstitle {
+        font-size: 38px;
+        text-align: left;
+    }
+
+    .art__name {
+        position: absolute;
+        top: 15%;
+        right: -3%;
+        background-color: #ffffff;
+        padding: 0 89px 0 20px;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .art {
+        padding: 10px;
+        margin: 122px 30px 30px 30px;
+    }
+
+    .welcome__title{
+        font-size: 28px;
+    }
 }

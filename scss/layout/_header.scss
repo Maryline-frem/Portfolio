@@ -1,12 +1,36 @@
+.header {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
 .header__img {
-    display: inline-block;
-    margin: 25px 25px 5px 25px;
     width: 300px;
     border: 8px solid #ffffff;
     border-radius: 300px;
     box-shadow: 8px 2px 10px #29524A;
 }
 
-@media screen and (min-width:701px) {
-    
+@media screen and (min-width:490px) {
+    .header__img {
+        display: inline-block;
+        margin: 10px 50px 5px 50px;
+        width: 350px;
+    }
+}
+
+@media screen and (min-width:670px) {
+    .header__img {
+        width: 500px;
+    }
+}
+
+@media screen and (min-width:1020px) {
+    .header {
+        justify-content: left;
+    }
+
+    .header__img {
+        width: 300px;
+    }
 }
