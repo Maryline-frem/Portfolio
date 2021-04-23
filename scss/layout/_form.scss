@@ -1,0 +1,30 @@
+.btn {
+    border: 1px solid #b1b1b1;
+    border-radius: 5px;
+    width: 110px;
+    height: 40px;
+    margin-top: 15px;
+}
+
+.btn:hover {
+    background-color: #E0B7B7;
+    color: #ffffff;
+    border: none;
+}
+
+#lastname, #firstname, #mail {
+    margin-bottom: 15px;
+    width: 86%;
+}
+
+#msg {
+    width: 86%;
+    border: 1px solid #b1b1b1;
+    border-radius: 5px;
+    resize: none;
+}
+
+.copyright {
+    font-size: 12px;
+    margin: 15px 0 0 0;
+}
