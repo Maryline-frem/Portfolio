@@ -35,23 +35,33 @@
     }
 
     .form__name{
-        width: 50%;
-        position: relative;
-        left: -20px;
-        top: 130px;
-        margin: 0;
+        display: inline-flex;
+        justify-content: center;
+        width: 85%;
+    }
+
+    #lastname, #firstname, #mail {
+        margin: 0 5px 0 5px;
     }
 
     .form__msg {
-        width: 60%;
-        position: relative;
-        left: 380px;
-        top: -17px;
-        margin: 0;
-
+        display: flex;
+        justify-content: center;
+        width: auto;
+        margin: 10px 10px 0 10px;
     }
 
     #msg {
         height: 132px;
+    }
+}
+
+@media screen and (min-width:1400px) {
+    .form__name{
+        width: 85.5%;
+    }
+
+    #msg {
+        height: 170px;
     }
 }

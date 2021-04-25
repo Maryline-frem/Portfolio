@@ -90,6 +90,22 @@
     }
 }
 
+@media screen and (min-width:768px) {
+    .title--rubrique {
+        font-size: 135px;
+    }
+
+    .rubrique {
+        position: absolute;
+        top: 400px;
+        right: 20px;
+        left: 20px;
+        background-color: #ffffff;
+        padding: 20px;
+        margin: 10px;
+    }
+}
+
 @media screen and (min-width:992px) {
     .art__title {
         font-size: 90px;
@@ -104,16 +120,25 @@
     .art__name {
         position: absolute;
         top: 15%;
-        right: -3%;
+        left: 38%;
         background-color: #ffffff;
-        padding: 0 89px 0 20px;
+        padding: 10px 25px 0 20px;
         margin: 0;
         box-sizing: border-box;
+    }
+
+    .title--rubrique {
+        font-size: 162px;
+        text-align: center;
     }
 
     .art {
         padding: 10px;
         margin: 122px 30px 30px 30px;
+    }
+
+    .rubrique {
+        top: 422px;
     }
 
     .welcome__title{
@@ -124,14 +149,9 @@
         margin: 50px 0 0 0;
     }
 
-    .title--rubrique {
-        font-size: 162px;
-        text-align: center;
-    }
-
     .rubrique {
         position: absolute;
-        bottom: 30px;
+        bottom: 5px;
         right: 20px;
         left: 20px;
         background-color: #ffffff;
@@ -163,5 +183,59 @@
 
     .sstitle--projet, .art--projet {
         text-align: center;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .art__name {
+        padding: 10px 45px 0 20px;
+    }
+}
+
+@media screen and (min-width:1440px) {
+    .art__title {
+        font-size: 130px;
+    }
+
+    .art__sstitle {
+        font-size: 55px;
+    }
+
+    .art__name {
+        top: 12%;
+        left: 36%;
+        padding: 10px 78.5px 0 20px;
+        margin: 0;
+    }
+
+    .welcome__title{
+        font-size: 34px;
+    }
+
+    p {
+        font-size: 20px;
+        padding: 0 40px;
+    }
+
+    .title--rubrique {
+        font-size: 200px;
+    }
+
+    .rubrique {
+        padding: 20px 0 0 0;
+        margin: 230px 0 20px 0;
+    }
+
+    .projet--img {
+        width: 150px;
+    }
+
+    .art--projet {
+        display: inline-flex;
+        justify-content: center;
+    }
+
+    .projet--link {
+        margin: 0 20px;
     }
 }
