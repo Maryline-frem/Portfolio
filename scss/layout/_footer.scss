@@ -23,6 +23,16 @@
     }
 }
 
+@media screen and (min-width:1280px) {
+    .navbar {
+        bottom: 220px;
+    }
+
+    .nav-link {
+        margin: 0 70px 0 70px;
+    }
+}
+
 @media screen and (min-width:1400px) {
     .navbar {
         bottom: 450px;
