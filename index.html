@@ -17,14 +17,40 @@
 </head>
 <body class="fond">
   <header class="header">
-    <img src="img/IMG_7432.jpg" alt="Photo de Maryline Frémineur" class="header__img">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <button class="navbar-toggler navbar-brand" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#index">Accueil <span class="sr-only"></span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#a_propos">A propos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#competences">Mes compétences</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projets">Mes projets</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <img src="img/IMG_7432.jpg" alt="Photo de Maryline Frémineur" class="header__img" id="index">
   </header>
-  <article class="art">
+  <article class="art art--accueil">
     <section class="art__name">
       <h1 class="art__title">Maryline Frémineur</h1>
       <h2 class="art__sstitle">Développeuse Web & Mobile</h2>
     </section>
-    <section class="welcome">
+  </article>
+  <article class="art art--rubrique">
+    <section class="rubrique">
       <p class="welcome__title">Bienvenue à vous dans mon univers !</p>
       <p>
       Actuellement en formation développeuse web et mobile chez Popschool à lens, 
@@ -32,34 +58,99 @@
       </p>
     </section>
   </article>
-  <footer>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <button class="navbar-toggler navbar-brand" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html">Accueil <span class="sr-only"></span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="apropos.html">A propos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="competences.html">Mes compétences</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="projets.html">Mes projets</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-          </ul>
+  <article class="art art--rubrique" id="a_propos">
+    <h2 class="art__title title--rubrique">A Propos</h2>
+    <section class="rubrique">
+      <p>Après 5 ans d'études en section Art Graphique à Saint-Luc Tournai,
+        j'ai travaillé pendant 14 années dans le graphisme à travers différentes
+        expériences professionelles, ce qui m'a permis d'approfondir et 
+        enrichir ma sensibilité graphique.</p>
+      <p>Les technologies évoluant, j'ai pris la décision de reprendre 
+        le chemin de l'école en passant par la formation développeur web et
+      web mobile de Pop School à Lens, afin d'élargir mes connaissances dans
+      ce domaine.</p>
+      <p>Après mes 4 mois de cours intensifs et mes 2 mois ou plus
+        de stage, mon objectif est d'entrer et d'évoluer dans une entreprise
+        afin d'approfondir et de mettre en pratique mes connaissances.</p>
+    </section>
+  </article>
+  <article class="art art--rubrique" id="competences">
+    <h2 class="art__title title--rubrique">Mes Compétences</h2>
+    <section class="rubrique rubrique--competence">
+      <h3 class="art__sstitle sstitle--rubrique">Logiciels</h3>
+      <img src="./logo/inDesign.png" alt="" class="art__logo">
+      <img src="./logo/illustrator.png" alt="" class="art__logo">
+      <img src="./logo/photoshop.png" alt="" class="art__logo">
+      <img src="./logo/figma.png" alt="" class="art__logo">
+      <img src="./logo/vs-code.png" alt="" class="art__logo">
+      <img src="./logo/git.png" alt="" class="art__logo">
+      <img src="./logo/wordpress.png" alt="" class="art__logo">
+      <h3 class="art__sstitle sstitle--rubrique">Langages</h3>
+      <img src="./logo/html.png" alt="" class="art__logo">
+      <img src="./logo/css.png" alt="" class="art__logo">
+      <img src="./logo/sass.png" alt="" class="art__logo">
+      <img src="./logo/JavaScript.png" alt="" class="art__logo">
+      <img src="./logo/react-js.png" alt="" class="art__logo">
+      <img src="./logo/node-js.png" alt="" class="art__logo">
+      <img src="./logo/python.png" alt="" class="art__logo">
+      <img src="./logo/php.png" alt="" class="art__logo">
+      <img src="./logo/symfony.png" alt="" class="art__logo">
+      <img src="./logo/MySQL.png" alt="" class="art__logo">
+    </section>
+  </article>
+  <article class="art art--rubrique" id="projets">
+    <h2 class="art__title title--rubrique">Mes Projets</h2>
+    <section class="art--projet rubrique">
+      <div class="projet--link">
+        <a href="index.html">
+          <img src="./img/portfolio.png" alt="Portfolio" class="projet--img">
+          <h3 class="art__sstitle sstitle--projet">Portfolio</h3>
+        </a>
+        <p class="projet--arg">Réalisation de mon portfolio à partir de ma maquette
+          réalisée sur Figma.</p>
+      </div>
+      <div class="projet--link">
+        <a href="https://showtrack190321.netlify.app/">
+          <img src="./img/showtrack.png" alt="Showtrack" class="projet--img">
+          <h3 class="art__sstitle sstitle--projet">Showtrack</h3>
+        </a>
+        <p class="projet--arg">Réalisation de mise en forme d'un site en HTML et CSS.
+          Exercice Pop school Lens.
+        </p>
+      </div>
+      <div class="projet--link">
+        <a href="https://calculatrice250421.netlify.app">
+          <img src="./img/calculatrice.png" alt="Calculatrice" class="projet--img">
+          <h3 class="art__sstitle sstitle--projet">Calculatrice</h3>
+        </a>
+        <p class="projet--arg">Réalisation d'une calculatrice en javascript.
+          Exercice Pop school Lens.</p>
+      </div>
+    </section>
+  </article>
+  <article class="art art--rubrique" id="contact">
+    <h2 class="art__title title--rubrique">Contact</h2>
+    <section class="rubrique rubrique--form">
+      <form name="contact" method="POST" data-netlify="true">
+        <div class="form__name">
+          <input type="text" name="name" id="lastname" placeholder="Nom" required>
+          <input type="text" name="name" id="firstname" placeholder="Prénom" required>
+          <input type="email" name="email" id="mail" placeholder="E-mail" required>
         </div>
-      </nav>
-    </footer>
+        <div class="form__msg">
+          <textarea name="message" id="msg" cols="25" rows="10" placeholder="Message" required></textarea>
+        </div>
+        <div class="form__btn">
+          <button type="submit" class="btn">Envoyer</button>
+        </div>
+      </form>
+    </section>
+  </article>
+  <footer class="footer">
+    <p class="copyright">2021 © Design & conception by Maryline Frémineur</p>
+  </footer>
 
-      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>

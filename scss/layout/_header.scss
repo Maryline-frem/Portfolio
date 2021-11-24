@@ -10,12 +10,24 @@
     border-radius: 300px;
     box-shadow: 8px 2px 10px #29524A;
     background-size: cover;
+    margin-top: 50px;
+}
+
+.navbar {
+    font-family: 'Montserrat Alternates', sans-serif;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.nav-link:hover {
+    background-color: #E0B7B7;
 }
 
 @media screen and (min-width:490px) {
     .header__img {
         display: inline-block;
-        margin: 10px 50px 5px 50px;
+        margin: 50px 50px 5px 50px;
         width: 350px;
     }
 }
@@ -34,10 +46,24 @@
     .header__img {
         width: 300px;
     }
+
+    .navbar {
+        border-top: 1px solid #888888;
+        border-bottom: 1px solid #888888;
+    }
+
+    .nav-link {
+        margin: 0 20px 0 20px;
+        padding: 0;
+    }
 }
 
 @media screen and (min-width:1400px) {
     .header__img {
         width: 30%;
+    }
+
+    .nav-link {
+        padding: 5px;
     }
 }

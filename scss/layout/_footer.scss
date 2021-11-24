@@ -1,45 +1,18 @@
-.navbar {
-    font-family: 'Montserrat Alternates', sans-serif;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+.footer {
+    text-align: center;
+    background-color: #3B1F2B;
+    height: 150px;
 }
 
-.nav-link:hover {
-    background-color: #E0B7B7;
+.copyright {
+    padding-top: 30px;
+    color: #ffffff;
+    font-size: 12px;
+    margin: 15px 0 0 0;
 }
 
-@media screen and (min-width:992px) {
-    .navbar {
-        position: absolute;
-        bottom: 350px;
-        border-top: 1px solid #888888;
-        border-bottom: 1px solid #888888;
-    }
-
-    .nav-link {
-        margin: 0 42px 0 42px;
-        padding: 0;
-    }
-}
-
-@media screen and (min-width:1280px) {
-    .navbar {
-        bottom: 240px;
-    }
-
-    .nav-link {
-        margin: 0 70px 0 70px;
-    }
-}
-
-@media screen and (min-width:1400px) {
-    .navbar {
-        bottom: 450px;
-    }
-
-    .nav-link {
-        margin: 0 85px 0 85px;
-        padding: 5px;
+@media screen and (min-width:768px) {
+    .copyright {
+        margin-top: 60px;
     }
 }

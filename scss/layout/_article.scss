@@ -3,21 +3,25 @@
     text-align: center;
     background-color: #ffffff;
     padding: 10px;
-    margin: 30px 0px 80px 0px;
+    margin: 30px 0px 40px 0px;
 }
 
 .art--rubrique {
-    margin-top: 40px;
+    margin-bottom: 0;
 }
 
 .art__title {
     font-family: 'Clicker Script', cursive;
-    font-size: 48px;
+    font-size: 54px;
     color: #3B1F2B;
 }
 
+.welcome__title {
+    font-size: 20px;
+}
+
 .title--rubrique {
-    font-size: 60px;
+    font-size: 44px;
 }
 
 .art__sstitle {
@@ -29,13 +33,13 @@
 
 .sstitle--rubrique {
     color: #29524A;
-    font-size: 28px;
+    font-size: 24px;
 }
 
 .art__titleprojet {
     font-family: 'Lora', serif;
     color: #29524A;
-    font-size: 28px;
+    font-size: 24px;
 }
 
 .art__logo {
@@ -66,7 +70,7 @@
 .sstitle--projet {
     font-family: 'Lora', serif;
     color: #29524A;
-    font-size: 28px;
+    font-size: 22px;
     padding-top: 10px;
     margin-bottom: 5px;
     text-decoration: none;
@@ -86,23 +90,30 @@
     }
 
     .art__sstitle {
-        font-size: 38px;
+        font-size: 35px;
+    }
+
+    .welcome__title {
+        font-size: 26px;
+    }
+
+    .title--rubrique {
+        font-size: 64px;
+    }
+
+    .sstitle--rubrique {
+        color: #29524A;
+        font-size: 30px;
+    }
+
+    .projet--link {
+        margin-bottom: 50px;
     }
 }
 
 @media screen and (min-width:768px) {
-    .title--rubrique {
-        font-size: 135px;
-    }
-
     .rubrique {
-        position: absolute;
-        top: 400px;
-        right: 20px;
-        left: 20px;
-        background-color: #ffffff;
-        padding: 20px;
-        margin: 10px;
+        margin: 0 50px;
     }
 }
 
@@ -113,13 +124,13 @@
     }
 
     .art__sstitle {
-        font-size: 38px;
+        font-size: 36px;
         text-align: left;
     }
 
     .art__name {
         position: absolute;
-        top: 15%;
+        top: 20%;
         left: 38%;
         background-color: #ffffff;
         padding: 10px 25px 0 20px;
@@ -128,13 +139,12 @@
     }
 
     .title--rubrique {
-        font-size: 162px;
+        font-size: 70px;
         text-align: center;
     }
 
-    .art {
-        padding: 10px;
-        margin: 122px 30px 30px 30px;
+    .art--accueil {
+        padding: 0;
     }
 
     .rubrique {
@@ -147,16 +157,7 @@
 
     .art--rubrique {
         margin: 50px 0 0 0;
-    }
-
-    .rubrique {
-        position: absolute;
-        bottom: 5px;
-        right: 20px;
-        left: 20px;
-        background-color: #ffffff;
         padding: 20px;
-        margin: 10px;
     }
 
     .sstitle--rubrique {
@@ -184,6 +185,10 @@
     .sstitle--projet, .art--projet {
         text-align: center;
     }
+
+    .art--arg {
+        margin: 0 100px;
+    }
 }
 
 @media screen and (min-width:1024px) {
@@ -193,23 +198,17 @@
 }
 
 @media screen and (min-width:1280px) {
-    .rubrique {
-        margin: 25px;
-        padding: 10px;
+    .art__name {
+        left: 30%;
+        background-color: #ffffff;
+        padding: 10px 306px 0 20px;
+        margin: 0;
+        box-sizing: border-box;
     }
 
-    .rubrique--competence {
-        bottom: -150px;
-        padding: 20px 20px 40px 20px;
-        margin: 10px 10px 40px 10px;
+    .projet--img {
+        width: 180px;
     }
-
-    .art--projet {
-        bottom: -100px;
-        padding: 20px 20px 40px 20px;
-        margin: 10px 10px 40px 10px;
-    }
- 
 }
 
 @media screen and (min-width:1440px) {
@@ -218,11 +217,11 @@
     }
 
     .art__sstitle {
-        font-size: 55px;
+        font-size: 45px;
     }
 
     .art__name {
-        top: 12%;
+        top: 25%;
         left: 36%;
         padding: 10px 78.5px 0 20px;
         margin: 0;
@@ -238,16 +237,11 @@
     }
 
     .title--rubrique {
-        font-size: 200px;
+        font-size: 90px;
     }
 
-    .rubrique {
-        padding: 20px 0 0 0;
-        margin: 230px 0 20px 0;
-    }
-
-    .projet--img {
-        width: 150px;
+    .sstitle--rubrique {
+        margin: 20px 0 10px 0;
     }
 
     .art--projet {
@@ -257,5 +251,11 @@
 
     .projet--link {
         margin: 0 20px;
+    }
+}
+
+@media screen and (min-width:1800px) {
+    .art__name {
+        padding-right: 378px;
     }
 }
